@@ -1,0 +1,244 @@
+﻿@model DayPlanner_V2.Models.TableSchema
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>TableSchema</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="Date" class="control-label"></label>
+                <input asp-for="Date" class="form-control" />
+                <span asp-validation-for="Date" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TopPriorities1" class="control-label"></label>
+                <input asp-for="TopPriorities1" class="form-control" />
+                <span asp-validation-for="TopPriorities1" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TopPriorities2" class="control-label"></label>
+                <input asp-for="TopPriorities2" class="form-control" />
+                <span asp-validation-for="TopPriorities2" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TopPriorities3" class="control-label"></label>
+                <input asp-for="TopPriorities3" class="form-control" />
+                <span asp-validation-for="TopPriorities3" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="BrainDump" class="control-label"></label>
+                <input asp-for="BrainDump" class="form-control" />
+                <span asp-validation-for="BrainDump" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FiveAM00" class="control-label"></label>
+                <input asp-for="FiveAM00" class="form-control" />
+                <span asp-validation-for="FiveAM00" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FiveAM30" class="control-label"></label>
+                <input asp-for="FiveAM30" class="form-control" />
+                <span asp-validation-for="FiveAM30" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SixAM00" class="control-label"></label>
+                <input asp-for="SixAM00" class="form-control" />
+                <span asp-validation-for="SixAM00" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SixAM30" class="control-label"></label>
+                <input asp-for="SixAM30" class="form-control" />
+                <span asp-validation-for="SixAM30" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SevenAM00" class="control-label"></label>
+                <input asp-for="SevenAM00" class="form-control" />
+                <span asp-validation-for="SevenAM00" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SevenAM30" class="control-label"></label>
+                <input asp-for="SevenAM30" class="form-control" />
+                <span asp-validation-for="SevenAM30" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EightAM00" class="control-label"></label>
+                <input asp-for="EightAM00" class="form-control" />
+                <span asp-validation-for="EightAM00" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EightAM30" class="control-label"></label>
+                <input asp-for="EightAM30" class="form-control" />
+                <span asp-validation-for="EightAM30" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NineAM00" class="control-label"></label>
+                <input asp-for="NineAM00" class="form-control" />
+                <span asp-validation-for="NineAM00" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NineAM30" class="control-label"></label>
+                <input asp-for="NineAM30" class="form-control" />
+                <span asp-validation-for="NineAM30" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TenAM00" class="control-label"></label>
+                <input asp-for="TenAM00" class="form-control" />
+                <span asp-validation-for="TenAM00" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TenAM30" class="control-label"></label>
+                <input asp-for="TenAM30" class="form-control" />
+                <span asp-validation-for="TenAM30" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ElevenAM00" class="control-label"></label>
+                <input asp-for="ElevenAM00" class="form-control" />
+                <span asp-validation-for="ElevenAM00" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ElevenAM30" class="control-label"></label>
+                <input asp-for="ElevenAM30" class="form-control" />
+                <span asp-validation-for="ElevenAM30" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TwelveAM00" class="control-label"></label>
+                <input asp-for="TwelveAM00" class="form-control" />
+                <span asp-validation-for="TwelveAM00" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TwelveAM30" class="control-label"></label>
+                <input asp-for="TwelveAM30" class="form-control" />
+                <span asp-validation-for="TwelveAM30" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="OnePM00" class="control-label"></label>
+                <input asp-for="OnePM00" class="form-control" />
+                <span asp-validation-for="OnePM00" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="OnePM30" class="control-label"></label>
+                <input asp-for="OnePM30" class="form-control" />
+                <span asp-validation-for="OnePM30" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TwoPM00" class="control-label"></label>
+                <input asp-for="TwoPM00" class="form-control" />
+                <span asp-validation-for="TwoPM00" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TwoPM30" class="control-label"></label>
+                <input asp-for="TwoPM30" class="form-control" />
+                <span asp-validation-for="TwoPM30" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ThreePM00" class="control-label"></label>
+                <input asp-for="ThreePM00" class="form-control" />
+                <span asp-validation-for="ThreePM00" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ThreePM30" class="control-label"></label>
+                <input asp-for="ThreePM30" class="form-control" />
+                <span asp-validation-for="ThreePM30" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FourPM00" class="control-label"></label>
+                <input asp-for="FourPM00" class="form-control" />
+                <span asp-validation-for="FourPM00" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FourPM30" class="control-label"></label>
+                <input asp-for="FourPM30" class="form-control" />
+                <span asp-validation-for="FourPM30" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FivePM00" class="control-label"></label>
+                <input asp-for="FivePM00" class="form-control" />
+                <span asp-validation-for="FivePM00" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FivePM30" class="control-label"></label>
+                <input asp-for="FivePM30" class="form-control" />
+                <span asp-validation-for="FivePM30" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SixPM00" class="control-label"></label>
+                <input asp-for="SixPM00" class="form-control" />
+                <span asp-validation-for="SixPM00" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SixPM30" class="control-label"></label>
+                <input asp-for="SixPM30" class="form-control" />
+                <span asp-validation-for="SixPM30" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SevenPM00" class="control-label"></label>
+                <input asp-for="SevenPM00" class="form-control" />
+                <span asp-validation-for="SevenPM00" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SevenPM30" class="control-label"></label>
+                <input asp-for="SevenPM30" class="form-control" />
+                <span asp-validation-for="SevenPM30" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EightPM00" class="control-label"></label>
+                <input asp-for="EightPM00" class="form-control" />
+                <span asp-validation-for="EightPM00" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EightPM30" class="control-label"></label>
+                <input asp-for="EightPM30" class="form-control" />
+                <span asp-validation-for="EightPM30" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NinePM00" class="control-label"></label>
+                <input asp-for="NinePM00" class="form-control" />
+                <span asp-validation-for="NinePM00" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NinePM30" class="control-label"></label>
+                <input asp-for="NinePM30" class="form-control" />
+                <span asp-validation-for="NinePM30" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TenPM00" class="control-label"></label>
+                <input asp-for="TenPM00" class="form-control" />
+                <span asp-validation-for="TenPM00" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TenPM30" class="control-label"></label>
+                <input asp-for="TenPM30" class="form-control" />
+                <span asp-validation-for="TenPM30" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ElevenPM00" class="control-label"></label>
+                <input asp-for="ElevenPM00" class="form-control" />
+                <span asp-validation-for="ElevenPM00" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ElevenPM30" class="control-label"></label>
+                <input asp-for="ElevenPM30" class="form-control" />
+                <span asp-validation-for="ElevenPM30" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -1,4 +1,9 @@
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using DayPlanner_V2.Data;
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddDbContext<DayPlanner_V2Context>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DayPlanner_V2Context") ?? throw new InvalidOperationException("Connection string 'DayPlanner_V2Context' not found.")));
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();

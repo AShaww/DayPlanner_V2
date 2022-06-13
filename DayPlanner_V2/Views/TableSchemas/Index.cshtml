@@ -1,0 +1,287 @@
+﻿@model IEnumerable<DayPlanner_V2.Models.TableSchema>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Date)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TopPriorities1)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TopPriorities2)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TopPriorities3)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BrainDump)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FiveAM00)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FiveAM30)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SixAM00)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SixAM30)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SevenAM00)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SevenAM30)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EightAM00)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EightAM30)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NineAM00)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NineAM30)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TenAM00)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TenAM30)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ElevenAM00)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ElevenAM30)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TwelveAM00)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TwelveAM30)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.OnePM00)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.OnePM30)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TwoPM00)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TwoPM30)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ThreePM00)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ThreePM30)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FourPM00)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FourPM30)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FivePM00)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FivePM30)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SixPM00)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SixPM30)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SevenPM00)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SevenPM30)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EightPM00)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EightPM30)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NinePM00)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NinePM30)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TenPM00)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TenPM30)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ElevenPM00)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ElevenPM30)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Date)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TopPriorities1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TopPriorities2)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TopPriorities3)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BrainDump)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FiveAM00)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FiveAM30)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SixAM00)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SixAM30)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SevenAM00)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SevenAM30)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EightAM00)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EightAM30)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NineAM00)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NineAM30)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TenAM00)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TenAM30)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ElevenAM00)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ElevenAM30)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TwelveAM00)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TwelveAM30)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.OnePM00)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.OnePM30)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TwoPM00)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TwoPM30)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ThreePM00)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ThreePM30)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FourPM00)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FourPM30)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FivePM00)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FivePM30)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SixPM00)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SixPM30)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SevenPM00)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SevenPM30)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EightPM00)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EightPM30)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NinePM00)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NinePM30)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TenPM00)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TenPM30)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ElevenPM00)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ElevenPM30)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
