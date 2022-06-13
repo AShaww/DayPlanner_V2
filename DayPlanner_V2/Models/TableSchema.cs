@@ -8,6 +8,8 @@ namespace DayPlanner_V2.Models
     {
         [Key]
         public int Id { get; set; }
+        [DataType(DataType.Date)]
+        [DisplayFormat(DataFormatString = "{0:dd-MM-yyyy}", ApplyFormatInEditMode = true)]
         public DateTime Date { get; set; }
         public string TopPriorities1 { get; set; }
         public string TopPriorities2 { get; set; }
