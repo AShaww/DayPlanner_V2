@@ -15,7 +15,7 @@ namespace DayPlanner_V2.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Date = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    CreatedAt = table.Column<DateTime>(type: "datetime2", nullable: false),
                     TopPriorities1 = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     TopPriorities2 = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     TopPriorities3 = table.Column<string>(type: "nvarchar(max)", nullable: false),

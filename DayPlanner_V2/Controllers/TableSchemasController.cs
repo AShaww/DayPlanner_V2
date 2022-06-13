@@ -46,9 +46,9 @@ namespace DayPlanner_V2.Controllers
         }
 
         // GET: TableSchemas/Create
-        public IActionResult Create()
+        public ActionResult Create()
         {
-            return View();
+            return View(new TableSchema { CreatedAt = DateTime.Now });
         }
 
         // POST: TableSchemas/Create
@@ -56,7 +56,7 @@ namespace DayPlanner_V2.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Date,TopPriorities1,TopPriorities2,TopPriorities3,BrainDump,FiveAM00,FiveAM30,SixAM00,SixAM30,SevenAM00,SevenAM30,EightAM00,EightAM30,NineAM00,NineAM30,TenAM00,TenAM30,ElevenAM00,ElevenAM30,TwelveAM00,TwelveAM30,OnePM00,OnePM30,TwoPM00,TwoPM30,ThreePM00,ThreePM30,FourPM00,FourPM30,FivePM00,FivePM30,SixPM00,SixPM30,SevenPM00,SevenPM30,EightPM00,EightPM30,NinePM00,NinePM30,TenPM00,TenPM30,ElevenPM00,ElevenPM30")] TableSchema tableSchema)
+        public async Task<IActionResult> Create([Bind("Id,CreatedAt,TopPriorities1,TopPriorities2,TopPriorities3,BrainDump,FiveAM00,FiveAM30,SixAM00,SixAM30,SevenAM00,SevenAM30,EightAM00,EightAM30,NineAM00,NineAM30,TenAM00,TenAM30,ElevenAM00,ElevenAM30,TwelveAM00,TwelveAM30,OnePM00,OnePM30,TwoPM00,TwoPM30,ThreePM00,ThreePM30,FourPM00,FourPM30,FivePM00,FivePM30,SixPM00,SixPM30,SevenPM00,SevenPM30,EightPM00,EightPM30,NinePM00,NinePM30,TenPM00,TenPM30,ElevenPM00,ElevenPM30")] TableSchema tableSchema)
         {
             if (ModelState.IsValid)
             {
@@ -88,7 +88,7 @@ namespace DayPlanner_V2.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Date,TopPriorities1,TopPriorities2,TopPriorities3,BrainDump,FiveAM00,FiveAM30,SixAM00,SixAM30,SevenAM00,SevenAM30,EightAM00,EightAM30,NineAM00,NineAM30,TenAM00,TenAM30,ElevenAM00,ElevenAM30,TwelveAM00,TwelveAM30,OnePM00,OnePM30,TwoPM00,TwoPM30,ThreePM00,ThreePM30,FourPM00,FourPM30,FivePM00,FivePM30,SixPM00,SixPM30,SevenPM00,SevenPM30,EightPM00,EightPM30,NinePM00,NinePM30,TenPM00,TenPM30,ElevenPM00,ElevenPM30")] TableSchema tableSchema)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,CreatedAt,TopPriorities1,TopPriorities2,TopPriorities3,BrainDump,FiveAM00,FiveAM30,SixAM00,SixAM30,SevenAM00,SevenAM30,EightAM00,EightAM30,NineAM00,NineAM30,TenAM00,TenAM30,ElevenAM00,ElevenAM30,TwelveAM00,TwelveAM30,OnePM00,OnePM30,TwoPM00,TwoPM30,ThreePM00,ThreePM30,FourPM00,FourPM30,FivePM00,FivePM30,SixPM00,SixPM30,SevenPM00,SevenPM30,EightPM00,EightPM30,NinePM00,NinePM30,TenPM00,TenPM30,ElevenPM00,ElevenPM30")] TableSchema tableSchema)
         {
             if (id != tableSchema.Id)
             {
